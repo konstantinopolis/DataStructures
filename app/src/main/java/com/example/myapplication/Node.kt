@@ -8,7 +8,8 @@ data class Node<T:Any>(var value: T, var next: Node<T>? = null){
              "$value"
         }
         else{
-           "&value --> {${next.toString()}}"
+
+            "$value --> ${next.toString()}"
         }
 
     }
