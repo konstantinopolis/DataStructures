@@ -2,11 +2,6 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.renderscript.ScriptGroup.Binding
-import android.view.View.inflate
-import android.view.inputmethod.InputBinding
-import android.widget.Toast
-import androidx.core.content.res.ColorStateListInflaterCompat.inflate
 import com.example.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
