@@ -1,3 +1,4 @@
 # DataStructuresKotlin
 
 *Linked List
+*Stack
