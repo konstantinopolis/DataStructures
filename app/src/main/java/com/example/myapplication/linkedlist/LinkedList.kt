@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.linkedlist
 
 class LinkedList <T:Any> {
     private var head : Node<T>? = null
@@ -27,7 +27,7 @@ class LinkedList <T:Any> {
         size++
 
     }
-    fun append(value: T):LinkedList<T> = apply{
+    fun append(value: T): LinkedList<T> = apply{
         if (isEmpty()){
             push(value)
             return this

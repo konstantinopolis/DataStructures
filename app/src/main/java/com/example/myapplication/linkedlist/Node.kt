@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.linkedlist
 
 data class Node<T:Any>(var value: T, var next: Node<T>? = null){
 

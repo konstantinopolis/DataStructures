@@ -3,6 +3,9 @@ package com.example.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.linkedlist.Node
+import com.example.myapplication.stack.ArrayListStack
+import com.example.myapplication.stack.Stack
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -17,15 +20,9 @@ class MainActivity : AppCompatActivity() {
 
         println(list2)
 
+        var stringstack: Stack<String> = ArrayListStack()
+
     }
 
-   /* fun VeriyiAl(){
-     binding.button.setOnClickListener(){
-         var text=binding.editTextTextPersonName
 
-     }
-
-
-
-    }*/
 }
