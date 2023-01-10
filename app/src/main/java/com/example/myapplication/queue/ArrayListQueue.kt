@@ -1,16 +1,25 @@
 package com.example.myapplication.queue
 
-class ArrayListQueue <E>(override val count: Int, override val isEmpty: Boolean) : Queue<E>{
+class ArrayListQueue <E>(): Queue<E>{
+    private val storage = arrayListOf <E>()
+
+    override val count: Int
+      get() = storage.size
+
+    override val isEmpty: Boolean
+      get() = count==0
+
+
     override fun peek(): E? {
-        TODO("Not yet implemented")
+        return storage.getOrNull(0)
     }
 
     override fun dequeue(): E? {
-        TODO("Not yet implemented")
+       return if(isEmpty) null else storage.removeAt(0)
     }
 
     override fun enqueue(element: E): Boolean {
-        TODO("Not yet implemented")
+        return storage.add(element)
     }
 
 }
